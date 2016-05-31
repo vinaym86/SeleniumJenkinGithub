@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -106,6 +106,20 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="google.GoogleTest" hash-for-method="googleAssertFail">googleAssertFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -155,6 +169,25 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">google.GoogleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="googleAssertFail">
+                  </a> <!-- googleAssertFail -->
+                  <span class="method-name">googleAssertFail</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at google.GoogleTest.googleAssertFail(GoogleTest.java:45)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -197,6 +230,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;extend.ExtentReporterNG&quot;/&gt;
+    &lt;listener class-name=&quot;retry.RetryListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
@@ -248,24 +282,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'assertgoogle')
 data.setCell(0, 2, 'google.OpenBrowser')
-data.setCell(0, 3, 4628);
+data.setCell(0, 3, 4918);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'googleAssertFail')
 data.setCell(1, 2, 'google.GoogleTest')
-data.setCell(1, 3, 4124);
+data.setCell(1, 3, 4248);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'googleAssertPass')
+data.setCell(2, 1, 'googleAssertFail')
 data.setCell(2, 2, 'google.GoogleTest')
-data.setCell(2, 3, 3898);
+data.setCell(2, 3, 4128);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'googleAssertPass')
+data.setCell(3, 2, 'google.GoogleTest')
+data.setCell(3, 3, 4044);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -300,22 +338,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">google.GoogleTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">googleAssertFail</span>
+                <span class="method-start">4957 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">9090 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">googleAssertFail</span>
-                <span class="method-start">5002 ms</span>
+                <span class="method-start">9214 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">9129 ms</span>
+                <span class="method-start">13464 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">googleAssertPass</span>
-                <span class="method-start">9250 ms</span>
+                <span class="method-start">13602 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">13150 ms</span>
+                <span class="method-start">17647 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

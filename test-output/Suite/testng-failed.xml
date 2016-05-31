@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="extend.ExtentReporterNG"/>
+    <listener class-name="retry.RetryListener"/>
   </listeners>
   <test name="Test1">
     <classes>

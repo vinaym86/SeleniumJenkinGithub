@@ -3,6 +3,7 @@
 <suite name="Suite">
 	<listeners>
         <listener class-name="extend.ExtentReporterNG" />
+        <listener class-name="retry.RetryListener"/>
     </listeners>
  	<test name="Test1" allow-return-values="true">
     <classes>
