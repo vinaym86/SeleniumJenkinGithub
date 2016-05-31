@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
+	<listeners>
+        <listener class-name="extend.ExtentReporterNG" />
+    </listeners>
+ 	<test name="Test1" allow-return-values="true">
     <classes>
       <class name="google.OpenBrowser"/>
     </classes>
-  </test> <!-- Test -->
+  	</test> <!-- Test -->
+  	<test name="Test2" allow-return-values="true">
+    <classes>
+      <class name="google.GoogleTest"/>
+    </classes>
+  	</test> <!-- Test -->
 </suite> <!-- Suite -->
