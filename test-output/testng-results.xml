@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6044" started-at="2016-06-01T09:49:49Z" finished-at="2016-06-01T09:49:55Z">
+  <suite name="Default suite" duration-ms="12227" started-at="2016-06-01T11:08:58Z" finished-at="2016-06-01T11:09:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6044" started-at="2016-06-01T09:49:49Z" finished-at="2016-06-01T09:49:55Z">
-      <class name="screencapture.SampleProgram">
-        <test-method status="PASS" signature="test_screen_capture_function()[pri:0, instance:screencapture.SampleProgram@14acaea5]" name="test_screen_capture_function" duration-ms="6021" started-at="2016-06-01T15:19:49Z" finished-at="2016-06-01T15:19:55Z">
+    <test name="Default test" duration-ms="12227" started-at="2016-06-01T11:08:58Z" finished-at="2016-06-01T11:09:11Z">
+      <class name="anybrowserbyproperty.openCloseBrowser_Test">
+        <test-method status="PASS" signature="StartBrowser_NavURL()[pri:0, instance:anybrowserbyproperty.openCloseBrowser_Test@5e5792a0]" name="StartBrowser_NavURL" is-config="true" duration-ms="10" started-at="2016-06-01T16:38:58Z" finished-at="2016-06-01T16:38:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_screen_capture_function -->
-      </class> <!-- screencapture.SampleProgram -->
+        </test-method> <!-- StartBrowser_NavURL -->
+        <test-method status="PASS" signature="OpenBrowserAndURL()[pri:0, instance:anybrowserbyproperty.openCloseBrowser_Test@5e5792a0]" name="OpenBrowserAndURL" duration-ms="12081" started-at="2016-06-01T16:38:58Z" finished-at="2016-06-01T16:39:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowserAndURL -->
+        <test-method status="PASS" signature="ClosingBrowser()[pri:0, instance:anybrowserbyproperty.openCloseBrowser_Test@5e5792a0]" name="ClosingBrowser" is-config="true" duration-ms="123" started-at="2016-06-01T16:39:10Z" finished-at="2016-06-01T16:39:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosingBrowser -->
+      </class> <!-- anybrowserbyproperty.openCloseBrowser_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
