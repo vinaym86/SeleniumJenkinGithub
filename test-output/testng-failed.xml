@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="extend.ExtentReporterNG"/>
-    <listener class-name="retry.RetryListener"/>
-  </listeners>
-  <test name="Test1">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="google.OpenBrowser"/>
+      <class name="screencapture.SampleProgram"/>
     </classes>
-  </test> <!-- Test1 -->
-  <test name="Test2">
-    <classes>
-      <class name="google.GoogleTest"/>
-    </classes>
-  </test> <!-- Test2 -->
-  <test name="Test2(failed)">
-    <classes>
-      <class name="google.GoogleTest">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="googleAssertFail"/>
-        </methods>
-      </class> <!-- google.GoogleTest -->
-    </classes>
-  </test> <!-- Test2(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,4 +1,4 @@
-package google;
+package extendlistner;
 
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
@@ -25,7 +25,7 @@ public class OpenBrowser {
 
 		// //input[@value='Google Search']
 
-		if (driver.findElements(By.xpath("//input[@value='Google Searchk']"))
+		if (driver.findElements(By.xpath("//input[@value='Google Search0']"))
 				.size() != 0) {
 			System.out.println("Element is Present");
 		} else {
