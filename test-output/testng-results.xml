@@ -1,121 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="4" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="17779" started-at="2016-05-31T10:18:54Z" finished-at="2016-05-31T10:19:12Z">
+  <suite name="Default suite" duration-ms="6044" started-at="2016-06-01T09:49:49Z" finished-at="2016-06-01T09:49:55Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="4939" started-at="2016-05-31T10:18:54Z" finished-at="2016-05-31T10:18:59Z">
-      <class name="google.OpenBrowser">
-        <test-method status="PASS" signature="assertgoogle()[pri:0, instance:google.OpenBrowser@26653222]" name="assertgoogle" duration-ms="4918" started-at="2016-05-31T15:48:54Z" finished-at="2016-05-31T15:48:59Z">
+    <test name="Default test" duration-ms="6044" started-at="2016-06-01T09:49:49Z" finished-at="2016-06-01T09:49:55Z">
+      <class name="screencapture.SampleProgram">
+        <test-method status="PASS" signature="test_screen_capture_function()[pri:0, instance:screencapture.SampleProgram@14acaea5]" name="test_screen_capture_function" duration-ms="6021" started-at="2016-06-01T15:19:49Z" finished-at="2016-06-01T15:19:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertgoogle -->
-      </class> <!-- google.OpenBrowser -->
-    </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="12809" started-at="2016-05-31T10:18:59Z" finished-at="2016-05-31T10:19:12Z">
-      <class name="google.GoogleTest">
-        <test-method status="SKIP" signature="googleAssertFail()[pri:0, instance:google.GoogleTest@464bee09]" name="googleAssertFail" duration-ms="4128" started-at="2016-05-31T15:48:59Z" finished-at="2016-05-31T15:49:03Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at google.GoogleTest.googleAssertFail(GoogleTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- googleAssertFail -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:google.GoogleTest@464bee09]" name="afterMethod" is-config="true" duration-ms="124" started-at="2016-05-31T15:49:03Z" finished-at="2016-05-31T15:49:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="googleAssertFail()[pri:0, instance:google.GoogleTest@464bee09]" name="googleAssertFail" duration-ms="4248" started-at="2016-05-31T15:49:03Z" finished-at="2016-05-31T15:49:08Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at google.GoogleTest.googleAssertFail(GoogleTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:967)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- googleAssertFail -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:google.GoogleTest@464bee09]" name="afterMethod" is-config="true" duration-ms="137" started-at="2016-05-31T15:49:08Z" finished-at="2016-05-31T15:49:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="googleAssertPass()[pri:0, instance:google.GoogleTest@464bee09]" name="googleAssertPass" duration-ms="4044" started-at="2016-05-31T15:49:08Z" finished-at="2016-05-31T15:49:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- googleAssertPass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:google.GoogleTest@464bee09]" name="afterMethod" is-config="true" duration-ms="114" started-at="2016-05-31T15:49:12Z" finished-at="2016-05-31T15:49:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- google.GoogleTest -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test_screen_capture_function -->
+      </class> <!-- screencapture.SampleProgram -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

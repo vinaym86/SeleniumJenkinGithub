@@ -8,15 +8,19 @@
   <test name="Test1">
     <classes>
       <class name="google.OpenBrowser"/>
+      <class name="google.GoogleTest"/>
+      <class name="retry.TestNGExampleTests"/>
     </classes>
   </test> <!-- Test1 -->
-  <test name="Test2">
+  <test name="Test1(failed)">
     <classes>
-      <class name="google.GoogleTest"/>
-    </classes>
-  </test> <!-- Test2 -->
-  <test name="Test2(failed)">
-    <classes>
+      <class name="retry.TestNGExampleTests">
+        <methods>
+          <include name="verifyLoginPageText"/>
+          <include name="verifyForgotPasswordPage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- retry.TestNGExampleTests -->
       <class name="google.GoogleTest">
         <methods>
           <include name="afterMethod"/>
@@ -24,5 +28,5 @@
         </methods>
       </class> <!-- google.GoogleTest -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

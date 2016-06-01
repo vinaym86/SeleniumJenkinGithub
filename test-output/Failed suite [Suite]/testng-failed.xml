@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <listeners>
+    <listener class-name="extend.ExtentReporterNG"/>
+    <listener class-name="retry.RetryListener"/>
+  </listeners>
+  <test name="Test1">
+    <classes>
+      <class name="google.OpenBrowser"/>
+      <class name="google.GoogleTest"/>
+    </classes>
+  </test> <!-- Test1 -->
+  <test name="Test1(failed)">
+    <classes>
+      <class name="google.GoogleTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="googleAssertFail"/>
+        </methods>
+      </class> <!-- google.GoogleTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test1(failed)">
+    <classes>
+      <class name="google.GoogleTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="googleAssertFail"/>
+        </methods>
+      </class> <!-- google.GoogleTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test1(failed)(failed)">
+    <classes>
+      <class name="google.GoogleTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="googleAssertFail"/>
+        </methods>
+      </class> <!-- google.GoogleTest -->
+    </classes>
+  </test> <!-- Test1(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

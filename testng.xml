@@ -8,11 +8,8 @@
  	<test name="Test1" allow-return-values="true">
     <classes>
       <class name="google.OpenBrowser"/>
-    </classes>
-  	</test> <!-- Test -->
-  	<test name="Test2" allow-return-values="true">
-    <classes>
       <class name="google.GoogleTest"/>
+      <class name="retry.TestNGExampleTests"/>     
     </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->
